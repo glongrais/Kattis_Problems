@@ -1,2 +1,3 @@
-./2048/main
-./2048/main.dSYM/*
+**/main
+**/main.dSYM
+.vscode/
