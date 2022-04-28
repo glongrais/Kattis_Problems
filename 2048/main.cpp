@@ -10,19 +10,6 @@ struct input_info{
     int direction;
 };
 
-int* stringToTable(string s){
-    int* l = new int[4];
-    stringstream ssin(s);
-    int i = 0;
-
-    while(ssin.good() && i < 4){
-        ssin >> l[i];
-        ++i;
-    }
-
-    return l;
-}
-
 int** reverseTranspose(int** matrix, int size){
     int** result;
 
@@ -41,22 +28,17 @@ int** reverseTranspose(int** matrix, int size){
     return result;
 }
 
-input_info readFile(string filename){
+input_info readFile(){
     int** grid;
     grid = new int*[4];
     int direction = 0;
-    string line;
-    ifstream input(filename);
-    if(input.is_open()){
-        for(int i = 0; i < 4; i++){
-            getline(input, line);
-            grid[i] = stringToTable(line);
-        }
-        getline(input, line);
-        direction = stoi(line);
 
-    }
-    input.close();
+    for(int i = 0; i < 4; i++){
+        grid[i] = new int[4];
+        cin >> grid[i][0] >> grid[i][1] >> grid[i][2] >> grid[i][3];
+     }
+    cin >> direction;
+
     input_info result = {grid, direction};
     return result;
 }
@@ -106,14 +88,14 @@ int** moveGrid(int** grid, int direction){
 }
 
 int main(int argc,  char **argv) {
-    input_info inputs = readFile(argv[1]);
+    input_info inputs = readFile();
     int** result = moveGrid(inputs.grid, inputs.direction);
 
     for(int i = 0; i < 4; i++){
         for(int j = 0; j < 4; j++){
-            printf("%i ", result[i][j]);
+            cout << result[i][j] << " ";
         }
-        printf("\n");
+        cout << "\n";
     }
 
   return 0;
