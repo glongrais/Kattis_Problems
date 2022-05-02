@@ -24,3 +24,5 @@ Output an integer indicating the aforementioned number of inversions modulo 1000
 | Sample Input | Sample Output
 | :---: | :---: |
 | ``` ?0? ``` | ``` 3 ``` |
+| ``` 1??0 ``` | ``` 13 ``` |
+| ``` ???? ``` | ``` 24 ``` |
