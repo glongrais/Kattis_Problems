@@ -12,6 +12,11 @@ void reverseStr(string& str)
         swap(str[i], str[n - i - 1]);
 }
 
+int pow2(int n, int m){
+    int result = pow(2, n);
+    return result % m;
+}
+
 int main() {
     string input;
 
@@ -19,7 +24,7 @@ int main() {
 
     int nb_0 = 0;
     int nb_int = 0;
-    int total = 0;
+    long total = 0;
 
     int m = 1000000007;
 
@@ -29,18 +34,18 @@ int main() {
         if(c == '0'){
             nb_0++;
         }else if(c == '1'){
-            int zero = nb_0 * pow(2, nb_int);
+            int zero = nb_0 * pow2(nb_int, m);
             int quest = 0;
             if(nb_int != 0){
-                quest = nb_int * pow(2, nb_int-1);
+                quest = nb_int * pow2(nb_int-1, m);
             }
             total = (total + zero + quest) % m;
         }else{
             total *= 2;
-            int zero = nb_0 * pow(2, nb_int);
+            int zero = nb_0 * pow2(nb_int, m);
             int quest = 0;
             if(nb_int != 0){
-                quest = nb_int * pow(2, nb_int-1);
+                quest = nb_int * pow2(nb_int-1, m);
             }
             total = (total + zero + quest) % m;
             nb_int++;
