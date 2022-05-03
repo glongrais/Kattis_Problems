@@ -32,6 +32,7 @@ For each query, output binary if a binary user can start from location ğ‘Ÿ1,ğ‘
 </tr>
 <tr>
 <td>
+<pre>
 
 ```
 1 4
@@ -40,6 +41,7 @@ For each query, output binary if a binary user can start from location ğ‘Ÿ1,ğ‘
 1 1 1 4
 1 1 1 1
 ```
+</pre>
 </td><td>
 
 ```
