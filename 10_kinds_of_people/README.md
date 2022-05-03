@@ -26,8 +26,57 @@ Input starts with a line containing two positive integers, 1≤𝑟≤1000 and 1
 
 For each query, output binary if a binary user can start from location 𝑟1,𝑐1 and move to location 𝑟2,𝑐2. Output decimal if a decimal user can move between the two locations. Otherwise, output neither.
 
-| Sample Input | Sample Output
-| :---: | :---: |
-| <pre><code>1<br>11</code></pre> | ``` 3 ``` |
-| ``` 1??0 ``` | ``` 13 ``` |
-| ``` ???? ``` | ``` 24 ``` |
+<table>
+<tr>
+<td>Sample Input</td><td>Sample Output</td>
+</tr>
+<tr>
+<td>
+
+```
+1 4
+1100
+2
+1 1 1 4
+1 1 1 1
+```
+</td><td>
+
+```
+neither
+decimal
+```
+</td>
+</tr>
+<tr>
+<td>
+
+```
+10 20
+11111111111111111111
+11000000000000000101
+11111111111111110000
+11111111111111110000
+11000000000000000111
+00011111111111111111
+00111111111111111111
+10000000000000001111
+11111111111111111111
+11111111111111111111
+3
+2 3 8 16
+8 1 7 3
+1 1 10 20
+
+
+```
+</td><td>
+
+```
+binary
+neither
+decimal
+```
+</td>
+</tr>
+</table>
