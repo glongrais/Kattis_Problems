@@ -1,6 +1,9 @@
 # Kattis Problems
 
 ## Problems
+✅: All tests passed  
+⚠️: Some tests passed  
+❌: All tests failed
 
 | Names | Difficulty | Language | Link | Statut |
 | :---: | :---: | :---: | :---: | :---: |
