@@ -12,3 +12,4 @@
 | [2048](https://github.com/glongrais/Kattis_Problems/tree/main/2048) | 2.5 | C++ | [![:cat:](https://open.kattis.com/favicon)](https://open.kattis.com/problems/2048) | ✅ |
 | [3D Printed Statues](https://github.com/glongrais/Kattis_Problems/tree/main/3D_Printed_Statues) | 2.0 | C++ | [![:cat:](https://open.kattis.com/favicon)](https://open.kattis.com/problems/3dprinter) | ✅ |
 | [4 Thought](https://github.com/glongrais/Kattis_Problems/tree/main/4_thought) | 2.7 | C++ | [![:cat:](https://open.kattis.com/favicon)](https://open.kattis.com/problems/4thought) | ✅ |
+| [Accounting](https://github.com/glongrais/Kattis_Problems/tree/main/Accounting) | 3.3 | C++ | [![:cat:](https://open.kattis.com/favicon)](https://open.kattis.com/problems/bokforing) | ✅ |
