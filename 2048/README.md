@@ -13,3 +13,141 @@
 ### Input
 
 The input is always a valid game state of a 2048 puzzle. The first four lines of input, that each contains four integers, describe the 16 integers in the 4 × 4 grid of 2048 puzzle. The 𝑗-th integer in the 𝑖-th line denotes the content of the cell located at the 𝑖-th row and the 𝑗-th cell. For this problem, all integers in the input will be either {0, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024}. Integer 0 means an empty cell.
+
+The fifth line of input contains an integer 0, 1, 2, or 3 that denotes a left, up, right, or down move executed by the player, respectively.
+
+### Output
+
+Output four lines with four integers each. Two integers in a line must be separated by a single space. This describes the new state of the 4×4 grid of 2048 puzzle. Again, integer 0 means an empty cell. Note that in this problem, you can ignore the part from the 2048 puzzle where it introduces a new random tile with a value of either 2 or 4 in an empty spot of the board at the start of a new turn.
+
+<table>
+<tr>
+<td>Sample Input</td><td>Sample Output</td>
+</tr>
+<tr>
+<td>
+
+```
+2 0 0 2
+4 16 8 2
+2 64 32 4
+1024 1024 64 0
+0
+```
+</td>
+<td>
+
+```
+4 0 0 0
+4 16 8 2
+2 64 32 4
+2048 64 0 0
+```
+</td>
+</tr>
+<tr>
+<td>
+
+```
+2 0 0 2
+4 16 8 2
+2 64 32 4
+1024 1024 64 0
+1
+```
+</td>
+<td>
+
+```
+2 16 8 4
+4 64 32 4
+2 1024 64 0
+1024 0 0 0
+```
+</td>
+</tr>
+<tr>
+<td>
+
+```
+2 0 0 2
+4 16 8 2
+2 64 32 4
+1024 1024 64 0
+2
+```
+</td>
+<td>
+
+```
+0 0 0 4
+4 16 8 2
+2 64 32 4
+0 0 2048 64
+```
+</td>
+</tr>
+<tr>
+<td>
+
+```
+2 0 0 2
+4 16 8 2
+2 64 32 4
+1024 1024 64 0
+3
+```
+</td>
+<td>
+
+```
+2 0 0 0
+4 16 8 0
+2 64 32 4
+1024 1024 64 4
+```
+</td>
+</tr>
+<tr>
+<td>
+
+```
+2 2 4 8
+4 0 4 4
+16 16 16 16
+32 16 16 32
+0
+```
+</td>
+<td>
+
+```
+4 4 8 0
+8 4 0 0
+32 32 0 0
+32 32 32 0
+```
+</td>
+</tr>
+<tr>
+<td>
+
+```
+2 2 4 8
+4 0 4 4
+16 16 16 16
+32 16 16 32
+2
+```
+</td>
+<td>
+
+```
+0 4 4 8
+0 0 4 8
+0 0 32 32
+0 32 32 32
+```
+</td>
+</tr>
+</table>
