@@ -3,7 +3,7 @@
 ## Problems
 ✅: All tests passed  
 ⚠️: Most tests passed  
-❌: All tests failed
+❌: All tests failed  
 🚧: In development
 
 | Names | Difficulty | Language | Link | Statut |
